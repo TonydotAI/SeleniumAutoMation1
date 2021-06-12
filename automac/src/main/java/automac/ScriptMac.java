@@ -23,6 +23,7 @@ public class ScriptMac {
 		driver = new FirefoxDriver();
 		System.out.println("Launching FIREFOX for Automation");
 		driver.navigate().to("http://www.google.com/");
+		driver.quit();	
 		break;
 
 	case "CHROME" :
@@ -30,6 +31,7 @@ public class ScriptMac {
 		driver = new ChromeDriver();
 		System.out.println("Launching CHROME for Automation");
 		driver.get("http://www.google.com/");
+		driver.quit();
 		break;
 
 	case "SAFARI" :
